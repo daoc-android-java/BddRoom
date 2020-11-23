@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
                 AppDatabase.class,
                 "misUsuarios").build();
 
+        //Descomentar para ver el error !
+        //List<User> list = db.userDao().getAll();
+
         new Thread() {
             @Override
             public void run() {
